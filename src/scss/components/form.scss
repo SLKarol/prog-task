@@ -1,0 +1,54 @@
+//--- Здесь просто собрано в кучу все, что касается формы
+.subform {
+  font-size: 1.2em;
+
+  .label {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+    color: $normalColor;
+  }
+
+  select {
+    font-size: 1.2em;
+    background: #f3f1eb;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid $borderColor2;
+  }
+
+  textarea {
+    position: relative;
+    width: 600px;
+    height: 207px;
+    line-height: 1;
+    margin: 0 -10px;
+    padding: 10px 10px 12px;
+    background: #fff;
+    border: 1px solid $borderColor2;
+    color: $normalColor3;
+    resize: none;
+    -webkit-box-shadow: inset 0px 2px 7px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 2px 7px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 2px 7px -7px rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+
+  input[type="text"] {
+    padding: 4px 7px;
+    background: #fff;
+    border: 1px solid $borderColor2;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 300px;
+  }
+}

@@ -1,0 +1,35 @@
+ul.select-action-min {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    width: 400px;
+    padding: 20px;
+
+    a {
+      color: $normalColor2;
+      text-decoration: none;
+      display: block;
+      background-color: $bgColorLeftMenu;
+      border-radius: 5px;
+      font-size: 1.2em;
+      text-align: center;
+      border: 1px solid $greyBorderColor;
+      box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.7);
+      text-shadow: 0px -1px 1px rgba(000, 000, 000, 0.2),
+        0px 1px 0px rgba(255, 255, 255, 0.3);
+      text-transform: uppercase;
+      padding: 7px 5px 7px 5px;
+      -webkit-transition: -webkit-transform 0.5s,
+        background-color 1s ease-in 0.5s;
+      transition: transform 0.5s, background-color 1s ease-in 0.5s;
+
+      &:hover {
+        font-weight: bold;
+        background-color: $greenTextColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+ul.select-action {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    width: 450px;
+    padding: 20px;
+
+    a {
+      color: $normalColor2;
+      text-align: center;
+      font-size: 1.2em;
+      border-radius: 5px;
+      border: 1px solid $red1;
+      box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.7);
+      text-shadow: 0px -1px 1px rgba(000, 000, 000, 0.2),
+        0px 1px 0px rgba(255, 255, 255, 0.3);
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 7px 5px 7px 5px;
+      display: block;
+      background-color: $borderTopColor;
+      -webkit-transition: -webkit-transform 0.5s,
+        background-color 1s ease-in 0.5s;
+      transition: transform 0.5s, background-color 1s ease-in 0.5s;
+
+      &:hover {
+        font-weight: bold;
+        background-color: $greenTextColor;
+        background-position: 3px 50%;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

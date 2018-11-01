@@ -1,0 +1,52 @@
+// -------------
+.blue-button {
+  display: inline-block;
+  line-height: 1.8em;
+  padding: 0 15px;
+  margin-right: 5px;
+  background: #527494;
+  color: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.blue-button:hover {
+  color: #fff;
+  background: #a0b8d2;
+}
+
+.orange-button {
+  display: inline-block;
+  line-height: 1.8em;
+  padding: 0 15px;
+  margin-right: 5px;
+  background: #b4812f;
+  color: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.orange-button:hover {
+  color: #fff;
+  background: #d8bc60;
+}
+
+.yellow-button {
+  display: inline-block;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 5px 15px;
+  background: #fecf00;
+  border: 0;
+  color: #2d2f35;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.yellow-button:hover {
+  color: #2d2f35;
+}

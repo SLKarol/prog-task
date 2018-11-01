@@ -1,0 +1,11 @@
+h1 {
+  font-family: "PFBeauSansPro", "Arial", sans-serif;
+}
+
+h2 {
+  @extend h1
+}
+
+h3 {
+  @extend h1
+}
