@@ -1,15 +1,15 @@
 import React, { PureComponent } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/styles/prism";
+import { solarizedlight } from "react-syntax-highlighter/dist/styles/prism";
 
 class SourceCode extends PureComponent {
-  render() {
+  render() {//docco tomorrow solarizedlight
     const { solution } = this.props;
     return (
       <section>
         <hr />
         <h3>Исходный код</h3>
-        <SyntaxHighlighter language="javascript" style={docco}>
+        <SyntaxHighlighter language="javascript" style={solarizedlight}>
           {solution}
         </SyntaxHighlighter>
       </section>

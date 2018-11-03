@@ -1,4 +1,3 @@
-"use strict";
 // Input: "abddfghgrab"
 // Output: {a:2,b:2,d:2,f:1,g:2,h:1,r:1}
 function countChars(inputString) {
@@ -13,7 +12,4 @@ function countChars(inputString) {
   }
   return re;
 }
-
-if (typeof module !== "undefined" && module.hasOwnProperty("exports")) {
-  module.exports = countChars;
-}
+export default countChars;

@@ -1,14 +1,16 @@
-'use strict';
-const reverseString = require('./reverseString');
-let IsPalindrome = function (phrase) {
-  // Удалить пробелы
+function IsPalindrome(phrase) {
+  // Удалить пробелы, запятые и т.п.
   const clearPhrase = phrase.replace(/ /g, '')
     .replace(/,/g, '').replace(/\./g, '').replace(/-/g, '')
     .replace(/!/g, '').replace(/\?/, '').replace(/'/g, '')
     .replace(/"/g, '').toLowerCase();
-  // Для ускорения работы
+  /* Я знаю два способа проверки: 
+  1. Реверсировать строку и сравнить с иходной;
+  2. Сравнивать посимвольно от начала и конца строки, они должны быть равны.
+  Здесь будет второй способ. */
+
+  // Для ускорения работы, запомнить длину строки
   const lenPhrase = clearPhrase.length;
-  // Суть скрипта
   if (lenPhrase === 0) {
     return false;
   }
@@ -20,6 +22,4 @@ let IsPalindrome = function (phrase) {
   return true;
 };
 
-if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-  module.exports = IsPalindrome;
-}
+export default IsPalindrome;
