@@ -33,6 +33,10 @@
   background: #d8bc60;
 }
 
+.orange-button:disabled {
+  color: #a3a3a3;
+}
+
 .yellow-button {
   display: inline-block;
   line-height: 1.4em;
@@ -49,4 +53,10 @@
 
 .yellow-button:hover {
   color: #2d2f35;
+}
+
+.yellow-button:disabled,
+  {
+  color: #a3a3a3;
+  background-color: #d8bc60;
 }
