@@ -11,8 +11,9 @@ import IndexArray from "./App/Array/IndexArray.jsx";
 import ArrayToString from "./App/Array/ArrayToString.jsx";
 import IndexNumber from "./App/Number/IndexNumber.jsx";
 import SummTwoNumbers from "./App/Number/SummTwoNumbers.jsx";
-import IndexNetwork from "./App/Network/IndexNetwork.jsx";
-import RSSReader from "./App/Network/RSSReader.jsx";
+import IndexAsynchrony from "./App/Asynchrony/IndexAsynchrony.jsx";
+import RSSReader from "./App/Asynchrony/RSSReader.jsx";
+import DelayText from "./App/Asynchrony/DelayText.jsx";
 
 const ROUTES = [
   {
@@ -83,14 +84,19 @@ const ROUTES = [
     ]
   },
   {
-    path: "/network",
-    component: IndexNetwork,
-    LeftMenu: "Network",
+    path: "/asynchrony",
+    component: IndexAsynchrony,
+    LeftMenu: "Asynchrony",
     routes: [
       {
-        path: "/network/rssreader",
+        path: "/asynchrony/rssreader",
         component: RSSReader,
         name: "Чтение RSS-ленты"
+      },
+      {
+        path: "/asynchrony/delaytext",
+        component: DelayText,
+        name: "Текст с задержкой"
       }
     ]
   }

@@ -9,7 +9,7 @@ class IndexNetwork extends Component {
   }
   componentDidMount() {
     //--- Получить подчиненные ссылки
-    const subModules = ROUTES.find(m => m.path === "/network").routes;
+    const subModules = ROUTES.find(m => m.path === "/asynchrony").routes;
     this.setState({ subModules });
   }
   render() {
@@ -23,10 +23,8 @@ class IndexNetwork extends Component {
           <li>Number</li>
         </ul>
         <div className="content-page">
-          <h2 className="selected-menu">Network</h2>
-          Примеры работы с сетью- как правило с интернет, промисы, фетчи и т.п.
-          Можно было бы назвать этот раздел Асинхроном, но это название чем-то
-          Марвелл напоминает :-)
+          <h2 className="selected-menu">Asynchrony</h2>
+          Примеры асинхронной работы.
           <ul className="select-action">
             {subModules.map(module => (
               <li key={module.path}>

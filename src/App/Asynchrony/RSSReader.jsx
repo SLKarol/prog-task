@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import BreadCrumbs from "./../CommonComponents/BreadCrumbs.jsx";
-import RSS_Reader from "./../lib/network/RSS-Reader";
+import RSS_Reader from "./../lib/asynchrony/RSS-Reader";
 import SourceCode from "./../CommonComponents/SourceCode.jsx";
 
 function RSSItem(props) {
