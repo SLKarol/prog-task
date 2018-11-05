@@ -1,5 +1,6 @@
 //--- Захватываю все разделы, кои будут учавствовать в роутере
 import IndexInfo from "./App/IndexInfo.jsx";
+import Help from "./App/Help.jsx";
 import IndexString from "./App/String/IndexString.jsx";
 import ReverseString from "./App/String/Reverse.jsx";
 import CountChars from "./App/String/CountChars.jsx";
@@ -19,6 +20,10 @@ const ROUTES = [
   {
     path: "/",
     component: IndexInfo
+  },
+  {
+    path: "/help",
+    component: Help
   },
   {
     path: "/string",

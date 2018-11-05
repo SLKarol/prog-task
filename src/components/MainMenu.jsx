@@ -6,9 +6,10 @@ import ROUTES from "./../Routes";
 class MainMenu extends PureComponent {
   constructor(props) {
     super(props);
-    const LeftMemu = ROUTES
-      .filter(r => r.LeftMenu)
-      .map(r => ({ LeftMenu: r.LeftMenu, path: r.path }));
+    const LeftMemu = ROUTES.filter(r => r.LeftMenu).map(r => ({
+      LeftMenu: r.LeftMenu,
+      path: r.path
+    }));
     this.state = { LeftMemu };
   }
   render() {
@@ -22,6 +23,9 @@ class MainMenu extends PureComponent {
         <ul className="favorite-menu">
           <li>
             <Link to="/">Главная</Link>
+          </li>
+          <li>
+            <Link to="/help">Как добавить пример</Link>
           </li>
         </ul>
         <ul className="app-left-menu">
