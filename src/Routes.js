@@ -15,6 +15,7 @@ import SummTwoNumbers from "./App/Number/SummTwoNumbers.jsx";
 import IndexAsynchrony from "./App/Asynchrony/IndexAsynchrony.jsx";
 import RSSReader from "./App/Asynchrony/RSSReader.jsx";
 import DelayText from "./App/Asynchrony/DelayText.jsx";
+import CheckExistTriangle from "./App/Number/CheckExistTriangle.jsx";
 
 const ROUTES = [
   {
@@ -61,6 +62,11 @@ const ROUTES = [
         path: "/number/summtwonumbers",
         component: SummTwoNumbers,
         name: "Сумма двух чисел"
+      },
+      {
+        path: "/number/checkexisttriangle",
+        component: CheckExistTriangle,
+        name: "Проверка существования треугольника по трем сторонам"
       }
     ]
   },
