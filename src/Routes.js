@@ -17,6 +17,7 @@ import RSSReader from "./App/Asynchrony/RSSReader.jsx";
 import DelayText from "./App/Asynchrony/DelayText.jsx";
 import CheckExistTriangle from "./App/Number/CheckExistTriangle.jsx";
 import LinearFunc from './App/Number/LinearFunc';
+import MatchingBrackets from './App/String/MatchingBrackets.jsx';
 
 const ROUTES = [
   {
@@ -51,6 +52,11 @@ const ROUTES = [
         path: "/string/ispalindrome",
         component: IsPalindrome,
         name: "Проверка на палиндром"
+      },
+      {
+        path: "/string/matchingbrackets",
+        component: MatchingBrackets,
+        name: "Matching Brackets"
       }
     ]
   },
