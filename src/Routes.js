@@ -18,6 +18,7 @@ import DelayText from "./App/Asynchrony/DelayText.jsx";
 import CheckExistTriangle from "./App/Number/CheckExistTriangle.jsx";
 import LinearFunc from './App/Number/LinearFunc';
 import MatchingBrackets from './App/String/MatchingBrackets.jsx';
+import ArrayCounters from './App/Array/ArrayCounters.jsx';
 
 const ROUTES = [
   {
@@ -103,7 +104,12 @@ const ROUTES = [
         path: "/array/arraytostring",
         component: ArrayToString,
         name: "Простой способ ToString"
-      }
+      },
+      {
+        path: "/array/arraycounters",
+        component: ArrayCounters,
+        name: "Array Counters"
+      }      
     ]
   },
   {
