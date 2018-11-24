@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { coy } from "react-syntax-highlighter/dist/styles/prism";
+import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import BreadCrumbs from "./../CommonComponents/BreadCrumbs.jsx";
 import SourceCode from "./../CommonComponents/SourceCode.jsx";

@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { solarizedlight } from "react-syntax-highlighter/dist/styles/prism";
+import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 class SourceCode extends PureComponent {
   render() {//docco tomorrow solarizedlight
