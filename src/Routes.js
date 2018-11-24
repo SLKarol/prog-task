@@ -19,6 +19,8 @@ import CheckExistTriangle from "./App/Number/CheckExistTriangle.jsx";
 import LinearFunc from './App/Number/LinearFunc';
 import MatchingBrackets from './App/String/MatchingBrackets.jsx';
 import ArrayCounters from './App/Array/ArrayCounters.jsx';
+import GcdLcm from './App/Number/GcdLcm.jsx';
+import Bmi from './App/Number/Bmi.jsx';
 
 const ROUTES = [
   {
@@ -80,6 +82,16 @@ const ROUTES = [
         path: "/number/linearfunc",
         component: LinearFunc,
         name: "Линейная функция"
+      },
+      {
+        path: "/number/gcdlcm",
+        component: GcdLcm,
+        name: "НОД и НОК"
+      },
+      {
+        path: "/number/bmi",
+        component: Bmi,
+        name: "Индекс массы тела"
       }
     ]
   },
